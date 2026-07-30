@@ -1,24 +1,21 @@
-import {  IBM_Plex_Mono } from "next/font/google";
-import AuroraBackground from "./components/AuroraBackground";
+import { Smooch_Sans } from "next/font/google";
 import "./globals.css";
+import AuroraBackground from "./components/AuroraBackground";
 
-// IBM Plex Mono is not a variable font — weights must be listed explicitly.
-const plexMono = IBM_Plex_Mono({
+const smooch = Smooch_Sans({
   subsets: ["latin"],
-  weight: "300",
-  style: ["normal"],
-  variable: "--font-plex-mono",
+  weight: "400",
 });
 
 export const metadata = {
-  title: "Shorewood — Curated Coastal Journeys",
-  description: "Curated coastal journeys designed to be felt, not rushed.",
+  title: "Shorewood",
+  description: "Luxury Kashmir Travel",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={plexMono.variable}>
-      <body className={`bg-sand font-sans text-[#191919] antialiased ${plexMono.variable}`}>
+    <html lang="en">
+      <body className={`${smooch.className} bg-sand text-[#191919] antialiased`}>
         <AuroraBackground />
         {children}
       </body>

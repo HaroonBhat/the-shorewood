@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experiences from "./components/Experiences";
-import Destinations from "./components/Destinations";
+// import Destinations from "./components/Destinations";
 import Packages from "./components/Destinations";
 import WhyUs from "./components/Whyus";
 import Testimonials from "./components/Testimonials";
@@ -24,12 +24,12 @@ export default function Home() {
         <Hero />
         <About />
         <Experiences />
-        <Destinations />
+        
         <Packages />
         <WhyUs />
-        <Testimonials />
-        <Blogs />
-        <CTA />
+        {/* <Testimonials /> */}
+        {/* <Blogs /> */}
+        {/* <CTA /> */}
       </main>
       <Footer />
     </>

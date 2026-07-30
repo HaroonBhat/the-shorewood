@@ -5,28 +5,28 @@ const U = (id, w = 1200) =>
 
 export const experiences = [
   {
-    title: "Travel to the Future",
-    text: "A coastline of luxury and innovation, where tomorrow comes alive.",
-    img: U("1512453979798-5ea266f8880c", 1000),
-    href: "/tours/dubai-modern-escape",
+    title: "Luxury Shikara Ride",
+    text: "Cruise through the peaceful waters of Dal Lake aboard a traditional Shikara while enjoying breathtaking Himalayan views and authentic Kashmiri hospitality.",
+    img: "/images/gulmarg.jpg",
+    href: "/experiences/shikara-ride",
   },
   {
-    title: "Travel Into Nature",
-    text: "Stunning landscapes and the pure alpine beauty of the fjords.",
-    img: U("1506905925346-21bda4d32df4", 1000),
-    href: "/tours/norway-fjords",
+    title: "Gulmarg Gondola",
+    text: "Experience one of the world's highest cable cars with panoramic mountain views, snow adventures, and unforgettable alpine scenery.",
+    img: "/images/gulmarg.jpg",
+    href: "/experiences/gulmarg-gondola",
   },
   {
-    title: "Travel Through Culture",
-    text: "A blend of traditions, colours, heritage and spices.",
-    img: U("1524492412937-b28074a5d7da", 1000),
-    href: "/tours/india-heritage-culture",
+    title: "Luxury Houseboat Stay",
+    text: "Spend your evenings in beautifully crafted houseboats featuring elegant interiors, traditional charm, and spectacular sunrise views over Dal Lake.",
+    img: "/images/gulmarg.jpg",
+    href: "/experiences/houseboat-stay",
   },
   {
-    title: "Travel Back in Time",
-    text: "Ancient wonders, monuments and stories written in stone.",
-    img: U("1539650116574-75c0c6d73f6f", 1000),
-    href: "/tours/discover-paris",
+    title: "Pahalgam Valley Escape",
+    text: "Explore lush valleys, crystal-clear rivers, pine forests, scenic meadows, and charming villages surrounded by Kashmir's natural beauty.",
+    img: "/images/gulmarg.jpg",
+    href: "/experiences/pahalgam",
   },
 ];
 
@@ -87,21 +87,25 @@ export const packages = [
 export const features = [
   {
     title: "Authentic Experiences",
+    img:"/images/dallake.jpg",
     text: "Trips tailored to your style and your budget.",
     icon: "compass",
   },
   {
     title: "Culinary Adventures",
+    img:"/images/gulmarg.jpg",
     text: "Savour local cuisines with guided food tours.",
     icon: "utensils",
   },
   {
     title: "Trusted Partnerships",
+    img:"/images/gulmarg.jpg",
     text: "Handpicked hotels, guides and local experiences.",
     icon: "shield",
   },
   {
     title: "Cultural Immersion",
+    img:"/images/gulmarg.jpg",
     text: "Engage with local traditions and communities.",
     icon: "globe",
   },

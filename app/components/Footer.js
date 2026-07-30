@@ -1,4 +1,23 @@
+import Image from "next/image";
 import Link from "next/link";
+
+/**
+ * Footer — mirrors the Traavellio footer structure.
+ *
+ *   footer            column, gap 40px, padding-bottom 40px
+ *     ├ conversion    padding 200px 0 80px, full-bleed photo overlay
+ *     │   ├ marquee   86px strip pinned to top:0
+ *     │   └ container gap 40px, max-width 1200px
+ *     │       ├ titles  gap 24px, max-width 520px, centred
+ *     │       └ button  "Book a trip" pill
+ *     └ container     column, gap 56px, padding 0 40px
+ *         ├ top       row, gap 72px (column + 64px on mobile)
+ *         │   ├ links   row, gap 40px — 3 columns, each gap 16px
+ *         │   │           nav items gap 8px; each link has a 1px "Line"
+ *         │   │           that grows to 25px on hover
+ *         │   └ social  row, gap 16px
+ *         └ bottom    1px rule + row, padding 20px 0, space-between
+ */
 
 const COLUMNS = [
   {
@@ -7,117 +26,154 @@ const COLUMNS = [
       { label: "Home", href: "/" },
       { label: "About", href: "/about" },
       { label: "Tours", href: "/tours" },
-      { label: "Destinations", href: "/destinations" },
-      { label: "Blogs", href: "/blogs" },
+      { label: "Book a Trip", href: "/book-a-trip" },
     ],
   },
   {
-    title: "Company",
+    title: "Documentation",
     links: [
-      { label: "Contact", href: "/contact" },
-      { label: "Book a trip", href: "/book-a-trip" },
+      { label: "Blogs", href: "/blogs" },
       { label: "Privacy Policy", href: "/policies/privacy-policy" },
       { label: "Terms & Conditions", href: "/policies/terms-conditions" },
     ],
+  },
+  {
+    title: "Other Pages",
+    links: [{ label: "404", href: "/404" }],
   },
 ];
 
 const SOCIALS = [
   {
-    name: "Instagram",
-    href: "https://instagram.com",
-    path: "M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM4 8a4 4 0 014-4h8a4 4 0 014 4v8a4 4 0 01-4 4H8a4 4 0 01-4-4V8zm12.5-.5h.01",
-  },
-  {
     name: "Facebook",
     href: "https://facebook.com",
-    path: "M14 8h2V5h-2a3.5 3.5 0 00-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V8.8c0-.5.4-.8 1-.8z",
+    d: "M14 8h2V5h-2a3.5 3.5 0 00-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V8.8c0-.5.4-.8 1-.8z",
   },
   {
-    name: "X",
-    href: "https://x.com",
-    path: "M4 4l7.5 9.5L4.5 20h2l6-6.2L17 20h3l-7.8-9.9L19.5 4h-2l-5.6 5.8L7.5 4H4z",
+    name: "Instagram",
+    href: "https://instagram.com",
+    d: "M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM4 8a4 4 0 014-4h8a4 4 0 014 4v8a4 4 0 01-4 4H8a4 4 0 01-4-4V8zm12.5-.5h.01",
   },
   {
     name: "LinkedIn",
     href: "https://linkedin.com",
-    path: "M6 9v10M6 5.5v.01M11 19v-5.5a2.5 2.5 0 015 0V19M11 9v10",
+    d: "M6 9v10M6 5.5v.01M11 19v-5.5a2.5 2.5 0 015 0V19M11 9v10",
+  },
+  {
+    name: "X",
+    href: "https://x.com",
+    d: "M4 4l7.5 9.5L4.5 20h2l6-6.2L17 20h3l-7.8-9.9L19.5 4h-2l-5.6 5.8L7.5 4H4z",
   },
 ];
 
+const MARQUEE = [
+  "Custom Tours",
+  "Worldwide Destinations",
+  "Luxury & Budget Travel",
+  "Visa Assistance",
+  "Hotel Bookings",
+  "Transfers & Rentals",
+];
+
+/** footer link with the 1px → 25px underline that grows on hover */
+function FooterLink({ href, label }) {
+  return (
+    <Link
+      href={href}
+      className="group/link flex w-max items-center gap-0 text-[15px] text-white/70 transition-colors duration-300 hover:text-white"
+    >
+      <span className="h-px w-px overflow-hidden bg-white transition-all duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover/link:mr-2 group-hover/link:w-[25px]" />
+      {label}
+    </Link>
+  );
+}
+
 export default function Footer() {
   return (
-    <footer className="">
-      <div className="mx-auto max-w-[100vw] overflow-hidden  bg-[#012830] px-6 pt-14  sm:px-10 lg:px-14">
-        <div className="grid gap-12 pb-14 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
-          {/* Brand */}
-          <div>
-            <Link href="/" className="flex items-center gap-2">
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-white text-[#033D4A]">
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M2 16c2.2 0 2.2 1.5 4.4 1.5S8.6 16 10.8 16s2.2 1.5 4.4 1.5S17.4 16 19.6 16H22" />
-                  <path d="M4 12l8-8 8 8" />
-                </svg>
-              </span>
-              <span className="text-lg font-semibold tracking-tight text-white">
-                Shorewood
-              </span>
-            </Link>
-            <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-white/60">
-              Curated coastal journeys designed to be felt, not rushed. Small
-              groups, local guides, slow mornings.
+    <footer className="relative flex w-full flex-col items-center gap-10 overflow-hidden bg-[#012830] pb-10">
+      {/* ── conversion band ───────────────────────────── */}
+      <section className="relative flex w-full flex-col items-center overflow-hidden px-0 pb-20 pt-[140px] lg:pt-[200px]">
+        {/* background photo */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=2000&q=80&auto=format&fit=crop"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover brightness-[.45]"
+          />
+        </div>
+
+        {/* marquee strip, 86px tall, pinned to the top */}
+        <div className="absolute left-0 top-0 z-[1] flex h-[86px] w-full items-center overflow-hidden border-b border-white/10 bg-black/25 backdrop-blur-sm">
+          <div className="flex w-max animate-marquee items-center gap-0 whitespace-nowrap will-change-transform">
+            {[0, 1].map((dup) => (
+              <div key={dup} className="flex items-center" aria-hidden={dup === 1}>
+                {MARQUEE.map((item) => (
+                  <span
+                    key={`${dup}-${item}`}
+                    className="flex items-center text-[15px] text-white/75 sm:text-[17px]"
+                  >
+                    {item}
+                    <span className="mx-6 inline-block h-1 w-1 rounded-full bg-white/40" />
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA content */}
+        <div className="relative z-[1] flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 sm:px-10">
+          <div className="flex w-full max-w-[520px] flex-col items-center gap-6 text-center">
+            <h3 className="max-w-[800px] text-[28px] font-medium leading-[1.15] tracking-[-0.04em] text-white sm:text-[38px] lg:text-[44px]">
+              Turn your travel dreams into reality
+            </h3>
+            <p className="text-[15px] leading-[1.5] text-white/70 sm:text-[16px]">
+              From the first idea to the final detail, we design journeys
+              you&rsquo;ll remember forever.
             </p>
           </div>
 
-          {/* Link columns */}
-          {COLUMNS.map((col) => (
-            <div key={col.title}>
-              <p className="text-[13px] uppercase tracking-wider text-white/45">
-                {col.title}
-              </p>
-              <ul className="mt-5 space-y-3">
-                {col.links.map((l) => (
-                  <li key={l.label}>
-                    <Link
-                      href={l.href}
-                      className="text-[15px] text-white/75 transition-colors hover:text-white"
-                    >
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <Link
+            href="/book-a-trip"
+            className="group inline-flex items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 text-[15px] font-medium text-[#033D4A] transition-transform duration-300 hover:-translate-y-0.5"
+          >
+            Book a trip
+            <span className="grid h-9 w-9 place-items-center rounded-full bg-[#033D4A] text-white transition-transform duration-300 group-hover:rotate-45">
+              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M7 17L17 7M9 7h8v8" />
+              </svg>
+            </span>
+          </Link>
+        </div>
+      </section>
 
-          {/* Newsletter */}
-          <div>
-            <p className="text-[13px] uppercase tracking-wider text-white/45">
-              Newsletter
-            </p>
-            <p className="mt-5 text-[15px] text-white/60">
-              One thoughtful email a month. No spam, ever.
-            </p>
-            <form className="mt-4 flex items-center gap-2 rounded-full border border-white/15 bg-white/5 p-1.5">
-              <input
-                type="email"
-                required
-                placeholder="you@email.com"
-                aria-label="Email address"
-                className="min-w-0 flex-1 bg-transparent px-3 text-[15px] text-white placeholder:text-white/40 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-white text-[#033D4A] transition-transform hover:scale-105"
-                aria-label="Subscribe"
+      {/* ── link container ────────────────────────────── */}
+      <div className="relative z-[1] flex w-full flex-col items-center gap-14 px-5 sm:px-10">
+        {/* top content */}
+        <div className="flex w-full max-w-[1200px] flex-col items-start gap-16 lg:flex-row lg:gap-[72px]">
+          {/* link columns */}
+          <div className="flex w-full flex-col gap-10 sm:flex-row sm:gap-10 lg:flex-1">
+            {COLUMNS.map((col) => (
+              <div
+                key={col.title}
+                className="flex w-full flex-col items-start gap-4 lg:flex-1"
               >
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M13 6l6 6-6 6" />
-                </svg>
-              </button>
-            </form>
+                <p className="text-[13px] text-[#7D7D7D]">{col.title}</p>
+                <nav className="flex w-full flex-col items-start gap-2">
+                  {col.links.map((l) => (
+                    <FooterLink key={l.label} href={l.href} label={l.label} />
+                  ))}
+                </nav>
+              </div>
+            ))}
+          </div>
 
-            <div className="mt-6 flex gap-2">
+          {/* social */}
+          <div className="flex flex-col items-start gap-4">
+            <p className="text-[13px] text-[#7D7D7D]">Social</p>
+            <div className="flex items-center gap-4">
               {SOCIALS.map((s) => (
                 <a
                   key={s.name}
@@ -125,10 +181,10 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.name}
-                  className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 transition-colors hover:bg-white hover:text-[#033D4A]"
+                  className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 transition-colors duration-300 hover:bg-white hover:text-[#033D4A]"
                 >
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    <path d={s.path} />
+                    <path d={s.d} />
                   </svg>
                 </a>
               ))}
@@ -136,14 +192,17 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="flex flex-col gap-3 border-t border-white/12 py-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-[14px] text-white/50">
-            © {new Date().getFullYear()} Shorewood. All rights reserved.
-          </p>
-          <p className="text-[14px] text-white/50">
-            Crafted for travellers who take their time.
-          </p>
+        {/* bottom bar */}
+        <div className="relative w-full max-w-[1200px]">
+          <div className="absolute left-0 top-0 h-px w-full bg-white/20" />
+          <div className="flex flex-col items-start justify-between gap-3 py-5 sm:flex-row sm:items-center sm:gap-6">
+            <p className="text-[14px] text-[#7D7D7D]">
+              All rights reserved for @Shorewood
+            </p>
+            <p className="text-[14px] text-[#7D7D7D]">
+              Crafted for travellers who take their time.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,16 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Orbitron } from "next/font/google";
 
-/**
- * Hero — matches the Traavellio reference structure:
- *   • 100vh section, video background, scale-in on load
- *   • centred stack: H1 → subtitle → pill CTA
- *   • four scattered photo cards floating at the corners
- *   • trust-indicator row pinned to the bottom
- *   • headline reveals word-by-word (blur + rise), pure CSS stagger
- */
+const orbit = Orbitron({
+  weight:"900",
+  subsets :["latin"],
+})
 
-const HEADLINE = ["Experience", "the", "Soul,", "of", "the", "kashmir"];
+
+const HEADLINE = ["THE SHOREWOOD"];
 
 // top/left percentages + size, taken from the reference layout
 const SCATTER = [
@@ -23,7 +21,7 @@ const SCATTER = [
     delay: "1.15s",
   },
   {
-    src: "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=700&q=80&auto=format&fit=crop",
+    src: "/images/gulmarg.jpg",
     alt: "Cliffside village",
     style: { top: "19.4%", left: "89%", width: 236, height: 161 },
     shadow: "-11px 11px 13px rgba(0,0,0,0.25)",
@@ -131,7 +129,7 @@ export default function Hero() {
       <div className="relative z-[3] flex w-full max-w-[1200px] flex-col items-center">
         <div className="flex w-full flex-col items-center gap-6 pt-14">
           <h1
-            className="max-w-[890px] text-center text-[40px] font-semibold leading-[1.2] tracking-[-0.045em] text-white sm:text-[56px] lg:text-[80px]"
+            className={ ` ${orbit.className} max-w-[890px] text-center text-[40px] font-semibold leading-[1.2] tracking-[-0.045em] text-white sm:text-[56px] lg:text-[80px] `}
             style={{ textShadow: "0 3px 12px rgba(0,0,0,0.37)" }}
           >
             {HEADLINE.map((word, i) => (
@@ -150,7 +148,7 @@ export default function Hero() {
             className="max-w-xl animate-word-in text-center text-[15px] leading-relaxed text-white/85 sm:text-[17px]"
             style={{ animationDelay: "0.85s" }}
           >
-            Curated journeys designed to be felt, not rushed.
+            Where Nature Finds Luxury. Private Kashmir journeys, designed around you.
           </p>
 
           <Link
@@ -158,7 +156,7 @@ export default function Hero() {
             className="group mt-2 inline-flex animate-word-in items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 text-[15px] font-medium text-[#033D4A] transition-transform duration-300 hover:-translate-y-0.5"
             style={{ animationDelay: "1s" }}
           >
-            Book a trip
+            Plan your Kashmir journey
             <span className="grid h-9 w-9 place-items-center rounded-full bg-[#033D4A] text-white transition-transform duration-300 group-hover:rotate-45">
               <svg
                 viewBox="0 0 24 24"
