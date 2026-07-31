@@ -15,10 +15,10 @@ const EASE = "cubic-bezier(.16,1,.3,1)";
 const PANEL_MS = 800; // must match the panel transition duration
 
 const PREVIEW = {
-  src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1100&q=80&auto=format&fit=crop",
+  src: "/images/1.jpg",
   eyebrow: "Featured journey",
-  title: "Amalfi Coast",
-  meta: "7 days / 6 nights",
+  title: "Chinar Trees",
+  meta: " days /  nights",
 };
 
 export default function Navbar() {
@@ -111,13 +111,21 @@ export default function Navbar() {
         >
           <Link href="/" className="flex items-center gap-2" onClick={close}>
             <span className="grid h-8 w-8 place-items-center rounded-full bg-white text-[#033D4A]">
-              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              {/* <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M2 16c2.2 0 2.2 1.5 4.4 1.5S8.6 16 10.8 16s2.2 1.5 4.4 1.5S17.4 16 19.6 16H22" />
                 <path d="M4 12l8-8 8 8" />
-              </svg>
+              </svg> */}
+              <Image
+                src="/images/logo.jpg"
+                alt="Logo"
+                width="40"
+                height="40"
+                sizes="(max-width:1024px) 52vw,26vw"
+                className="object-cover rounded-3xl"
+              />
             </span>
-            <span className="text-[17px] font-semibold tracking-[-0.05em] text-white">
-              Shorewood
+            <span className="text-[30px] font-light  text-white">
+              The Shorewood
             </span>
           </Link>
 
@@ -308,7 +316,7 @@ export default function Navbar() {
                     {SOCIALS.map((s) => (
                       <a
                         key={s}
-                        href="#"
+                        href="https://www.instagram.com/theshorewood"
                         tabIndex={open ? 0 : -1}
                         className="outline-none transition-colors hover:text-white focus-visible:text-white"
                       >

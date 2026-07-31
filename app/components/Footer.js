@@ -51,7 +51,7 @@ const SOCIALS = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/theshorewood/",
     d: "M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM4 8a4 4 0 014-4h8a4 4 0 014 4v8a4 4 0 01-4 4H8a4 4 0 01-4-4V8zm12.5-.5h.01",
   },
   {
@@ -67,12 +67,12 @@ const SOCIALS = [
 ];
 
 const MARQUEE = [
-  "Custom Tours",
-  "Worldwide Destinations",
-  "Luxury & Budget Travel",
-  "Visa Assistance",
-  "Hotel Bookings",
-  "Transfers & Rentals",
+  "Where Nature Finds Luxury",
+  "Bespoke Travel Experiences",
+  "Authentic Kashmiri Hospitality",
+  "Exclusive Scenic Escapes",
+  "Luxury Meets Adventure",
+  "Crafted With Local Expertise",
 ];
 
 /** footer link with the 1px → 25px underline that grows on hover */
@@ -96,7 +96,7 @@ export default function Footer() {
         {/* background photo */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=2000&q=80&auto=format&fit=crop"
+            src="/images/footer.jpg"
             alt=""
             fill
             sizes="100vw"

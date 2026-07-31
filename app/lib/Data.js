@@ -7,49 +7,68 @@ export const experiences = [
   {
     title: "Luxury Shikara Ride",
     text: "Cruise through the peaceful waters of Dal Lake aboard a traditional Shikara while enjoying breathtaking Himalayan views and authentic Kashmiri hospitality.",
-    img: "/images/gulmarg.jpg",
+    img: "/images/dallake.jpg",
     href: "/experiences/shikara-ride",
   },
   {
     title: "Gulmarg Gondola",
     text: "Experience one of the world's highest cable cars with panoramic mountain views, snow adventures, and unforgettable alpine scenery.",
-    img: "/images/gulmarg.jpg",
-    href: "/experiences/gulmarg-gondola",
+    img: "/images/experiences/Gondola.jpg",
+    href: "/images/experiences/Gondola.jpg",
   },
   {
     title: "Luxury Houseboat Stay",
     text: "Spend your evenings in beautifully crafted houseboats featuring elegant interiors, traditional charm, and spectacular sunrise views over Dal Lake.",
-    img: "/images/gulmarg.jpg",
-    href: "/experiences/houseboat-stay",
+    img: "/images/experiences/Houseboat.jpg",
+    href: "/images/experiences/Houseboat.jpg",
   },
   {
-    title: "Pahalgam Valley Escape",
+    title: "Tarsar Marsar Escape",
     text: "Explore lush valleys, crystal-clear rivers, pine forests, scenic meadows, and charming villages surrounded by Kashmir's natural beauty.",
-    img: "/images/gulmarg.jpg",
-    href: "/experiences/pahalgam",
+    img: "/images/experiences/Tarsar.jpg",
+    href: "/images/experiences/Tarsar.jpg",
   },
 ];
 
 export const destinations = [
   {
-    name: "Amalfi",
-    tag: "Cliffside villages & lemon groves",
-    img: U("1533106418989-88406c7cc8ca", 1600),
+    name: "Srinagar",
+    tag: "The Heart of Kashmir",
+    description:
+      "Discover the timeless beauty of Dal Lake, Mughal Gardens, vibrant local markets, and luxurious houseboat stays while experiencing the rich culture of Kashmir's summer capital.",
+    img: "/images/destinations/srinagar.jpg",
   },
+
   {
-    name: "Santorini",
-    tag: "White terraces above a blue caldera",
-    img: U("1570077188670-e3a8d69ac5ff", 1600),
+    name: "Gulmarg",
+    tag: "Adventure & Snow Paradise",
+    description:
+      "Experience the famous Gulmarg Gondola, breathtaking snow-covered mountains, world-class skiing, scenic meadows, and unforgettable Himalayan adventures throughout the year.",
+    img: "/images/gulmarg.jpg",
   },
+
   {
-    name: "Maldives",
-    tag: "Overwater stays & glass-clear lagoons",
-    img: U("1514282401047-d79a71a590e8", 1600),
+    name: "Pahalgam",
+    tag: "Valley of Shepherds",
+    description:
+      "Escape into lush pine forests, peaceful rivers, green valleys, and charming villages, making Pahalgam one of Kashmir's most relaxing and picturesque destinations.",
+    img: "/images/destinations/Pahalgam.jpg",
   },
+
   {
-    name: "Big Sur",
-    tag: "Pacific cliffs and redwood mornings",
-    img: U("1449034446853-66c86144b0ad", 1600),
+    name: "Sonamarg",
+    tag: "The Meadow of Gold",
+    description:
+      "Witness majestic glaciers, alpine lakes, snow-capped peaks, and thrilling trekking routes surrounded by some of the most spectacular landscapes in Kashmir.",
+    img: "/images/destinations/Sonamarg.jpg",
+  },
+
+  {
+    name: "Doodhpathri",
+    tag: "Hidden Natural Paradise",
+    description:
+      "Enjoy rolling green meadows, crystal-clear streams, peaceful landscapes, and untouched natural beauty away from the crowds.",
+    img: "/images/destinations/Doodhpathri.jpg",
   },
 ];
 
@@ -86,28 +105,28 @@ export const packages = [
 
 export const features = [
   {
-    title: "Authentic Experiences",
-    img:"/images/dallake.jpg",
-    text: "Trips tailored to your style and your budget.",
     icon: "compass",
+    title: "Expert Local Guides",
+    text: "Discover Kashmir through experienced local guides who know every hidden valley, scenic viewpoint, and cultural treasure.",
+    img: "/images/why-us/f4.jpg",
   },
   {
-    title: "Culinary Adventures",
-    img:"/images/gulmarg.jpg",
-    text: "Savour local cuisines with guided food tours.",
     icon: "utensils",
+    title: "Luxury Stays ",
+    text: "Enjoy handpicked luxury hotels, boutique resorts, and authentic houseboats offering exceptional comfort and breathtaking views.",
+    img: "/images/why-us/f1.jpg",
   },
   {
-    title: "Trusted Partnerships",
-    img:"/images/gulmarg.jpg",
-    text: "Handpicked hotels, guides and local experiences.",
     icon: "shield",
+    title: "Safe & Hassle-Free Travel",
+    text: "From airport pickup to guided tours and transportation, we handle every detail so you can simply relax and enjoy your journey.",
+    img: "/images/why-us/f2.jpg",
   },
   {
-    title: "Cultural Immersion",
-    img:"/images/gulmarg.jpg",
-    text: "Engage with local traditions and communities.",
     icon: "globe",
+    title: "Personalized Experiences",
+    text: "Every itinerary is tailored to your interests, whether you're seeking adventure, romance, family vacations, or peaceful escapes.",
+    img: "/images/why-us/f3.jpg",
   },
 ];
 

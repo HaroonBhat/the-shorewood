@@ -13,15 +13,15 @@ const HEADLINE = ["THE SHOREWOOD"];
 // top/left percentages + size, taken from the reference layout
 const SCATTER = [
   {
-    src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80&auto=format&fit=crop",
-    alt: "Turquoise shallows",
+    src: "/images/hero4/1.jpg",
+    alt: "hidden kashmir",
     style: { top: "17.6%", left: "14.9%", width: 244, height: 150 },
     shadow: "10px 11px 13px rgba(0,0,0,0.25)",
     rotate: "-5deg",
     delay: "1.15s",
   },
   {
-    src: "/images/gulmarg.jpg",
+    src: "/images/hero4/3.jpg",
     alt: "Cliffside village",
     style: { top: "19.4%", left: "89%", width: 236, height: 161 },
     shadow: "-11px 11px 13px rgba(0,0,0,0.25)",
@@ -29,8 +29,8 @@ const SCATTER = [
     delay: "1.3s",
   },
   {
-    src: "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=700&q=80&auto=format&fit=crop",
-    alt: "Beach at golden hour",
+    src: "/images/hero4/2.jpg",
+    alt: "pic in pampore",
     style: { top: "77.25%", left: "12.75%", width: 226, height: 143 },
     shadow: "10px 11px 13px rgba(0,0,0,0.25)",
     rotate: "4deg",
@@ -48,15 +48,15 @@ const SCATTER = [
 
 const TRUST = [
   {
-    label: "4.9 stars (541k Reviews)",
-    short: "4.9 (541k)",
+    label: "Curated Kashmir Experiences",
+    short: "Curated Tours",
     icon: (
       <path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.9-5.4 2.9 1-6L3.2 9.4l6.1-.9L12 3z" />
     ),
   },
   {
-    label: "50k travellers",
-    short: "50k travellers",
+    label: "Local Travel Specialists",
+    short: "Local Experts",
     icon: (
       <>
         <circle cx="9" cy="8" r="3.2" />
@@ -65,15 +65,16 @@ const TRUST = [
     ),
   },
   {
-    label: "1+ million followers",
-    short: "1M+ followers",
+    label: "24/7 Travel Assistance",
+    short: "24/7 Support",
     icon: (
-      <>
-        <rect x="4" y="4" width="16" height="16" rx="4.5" />
-        <circle cx="12" cy="12" r="3.4" />
-        <path d="M16.7 7.3h.01" />
-      </>
-    ),
+  <>
+    <path d="M4 12a8 8 0 0116 0" />
+    <rect x="3" y="12" width="3" height="6" rx="1.5" />
+    <rect x="18" y="12" width="3" height="6" rx="1.5" />
+    <path d="M6 18a6 6 0 006 3h2" />
+  </>
+),
   },
 ];
 

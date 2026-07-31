@@ -21,8 +21,8 @@ function Card({ item, flipped }) {
   );
 
   const text = (
-    <div className="flex w-full flex-col items-start gap-1">
-      <h3 className="w-full text-[20px] font-medium leading-[1.3]  tracking-[-0.03em] text-[#191919] sm:text-[30px]">
+    <div className="flex w-full flex-col  items-start gap-1">
+      <h3 className="w-full text-[20px] font-medium leading-[1.3] mt-7 sm:mt-1 tracking-[-0.03em] text-[#191919] sm:text-[30px]">
         {item.title}
       </h3>
       <p className="w-full text-[15px] leading-[1.4] text-[#404040] sm:text-[16px]">
@@ -83,7 +83,7 @@ export default function Experiences() {
         {/* ── content ───────────────────────────────── */}
         <div className="flex w-full flex-col items-center gap-10">
           {/* cards: zig-zag row on desktop, plain grid below */}
-          <div className="grid w-full grid-cols-1 items-center gap-6 sm:grid-cols-2 lg:flex lg:flex-row lg:gap-6">
+          <div className="grid w-full grid-cols-1 items-center gap-6  sm:grid-cols-2 lg:flex lg:flex-row lg:gap-6">
             {experiences.map((item, i) => {
               const flipped = i % 2 === 1;
               return (

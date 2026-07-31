@@ -14,8 +14,8 @@ export default function Destinations() {
     <section className="bg-[#FAF8F0] py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-6">
         <SectionHeading
-          eyebrow="Most Loved Destinations"
-          title="Explore the world's most popular destinations"
+          eyebrow="Discover Kashmir"
+          title="Explore Kashmir's Most Iconic & Hidden Destinations"
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_340px]">
@@ -28,9 +28,8 @@ export default function Destinations() {
                 alt={d.name}
                 fill
                 sizes="(max-width: 1024px) 92vw, 60vw"
-                className={`-z-20 object-cover transition-opacity duration-700 ${
-                  i === active ? "opacity-100" : "opacity-0"
-                }`}
+                className={`-z-20 object-cover transition-opacity duration-700 ${i === active ? "opacity-100" : "opacity-0"
+                  }`}
                 priority={i === 0}
               />
             ))}
@@ -68,11 +67,10 @@ export default function Destinations() {
                   onMouseEnter={() => setActive(i)}
                   onFocus={() => setActive(i)}
                   onClick={() => setActive(i)}
-                  className={`flex h-full w-[220px] items-center gap-3 rounded-[20px] border p-3 text-left transition-all duration-300 lg:w-full ${
-                    i === active
+                  className={`flex h-full w-[220px] items-center gap-3 rounded-[20px] border p-3 text-left transition-all duration-300 lg:w-full ${i === active
                       ? "border-transparent bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
                       : "border-black/5 bg-white/40 hover:bg-white/70"
-                  }`}
+                    }`}
                 >
                   <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-2xl">
                     <Image src={d.img} alt="" fill sizes="56px" className="object-cover" />

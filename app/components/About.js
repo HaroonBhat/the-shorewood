@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "./SectionHeading";
-import image1 from "../../public/images/pahalgam.jpg"
 
 export default function About() {
   return (
@@ -17,7 +16,7 @@ export default function About() {
 
           <div className="relative aspect-[4/5] w-[78%] overflow-hidden rounded-[28px]">
             <Image
-              src={image1}
+              src="/images/about1.jpg"
               alt="Luxury travel experience in Kashmir"
               fill
               sizes="(max-width:1024px) 78vw,40vw"
@@ -27,7 +26,7 @@ export default function About() {
 
           <div className="absolute bottom-[-28px] right-0 aspect-square w-[52%] overflow-hidden rounded-[24px] border-[6px] border-white shadow-xl">
             <Image
-              src={image1}
+              src="/images/about2.jpg"
               alt="Shikara ride on Dal Lake"
               fill
               sizes="(max-width:1024px) 52vw,26vw"
@@ -37,7 +36,7 @@ export default function About() {
 
           <div className="absolute left-4 top-4 rounded-2xl bg-white/90 px-4 py-3 shadow-lg backdrop-blur-md">
             <p className="text-[24px] font-semibold leading-none text-[#143D2D]">
-              Exprience
+              Classic
             </p>
 
             
