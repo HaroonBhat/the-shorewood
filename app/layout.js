@@ -11,7 +11,7 @@ const smooch = Smooch_Sans({
 });
 
 export const metadata = {
-  title: "Shorewood",
+  title: "The Shorewood",
   description: "Luxury Kashmir Travel",
 };
 
