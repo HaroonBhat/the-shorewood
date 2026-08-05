@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import NotFoundRedirect from "./components/NotFoundRedirect";
 
 /**
@@ -37,7 +35,6 @@ const QUICK_LINKS = [
 export default function NotFound() {
   return (
     <>
-      <Navbar />
 
       <main>
         <section className="relative flex min-h-[100svh] w-full flex-col items-center justify-center overflow-hidden px-5 pb-[100px] pt-[160px] sm:px-10 lg:pt-[200px]">
@@ -179,7 +176,6 @@ export default function NotFound() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

@@ -100,7 +100,7 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/45 via-black/30 to-black/65" />
 
       {/* ── scattered photo cards (desktop only) ─────── */}
-      {SCATTER.map((s) => (
+      {/* {SCATTER.map((s) => (
         <figure
           key={s.src}
           className="absolute z-[2] hidden animate-card-in overflow-hidden rounded-2xl lg:block"
@@ -124,7 +124,7 @@ export default function Hero() {
             className="object-cover"
           />
         </figure>
-      ))}
+      ))} */}
 
       {/* ── centre column ────────────────────────────── */}
       <div className="relative z-[3] flex w-full max-w-[1200px] flex-col items-center">
@@ -153,7 +153,7 @@ export default function Hero() {
           </p>
 
           <Link
-            href="/book-a-trip"
+            href="/BookATrip"
             className="group mt-2 inline-flex animate-word-in items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 text-[15px] font-medium text-[#033D4A] transition-transform duration-300 hover:-translate-y-0.5"
             style={{ animationDelay: "1s" }}
           >
@@ -174,7 +174,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-
+``
       {/* ── trust indicators ─────────────────────────── */}
       <div className="absolute bottom-0 left-1/2 z-[3] flex w-full -translate-x-1/2 animate-word-in flex-wrap items-center justify-center gap-x-6 gap-y-3 pb-6 sm:gap-x-10"
         style={{ animationDelay: "1.75s" }}

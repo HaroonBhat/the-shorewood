@@ -299,7 +299,7 @@ export default function Navbar() {
                   }}
                 >
                   <Link
-                    href="/book-a-trip"
+                    href="/BookATrip"
                     onClick={close}
                     tabIndex={open ? 0 : -1}
                     className="group inline-flex items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 text-[15px] font-medium text-[#033D4A] outline-none focus-visible:ring-2 focus-visible:ring-white/70"

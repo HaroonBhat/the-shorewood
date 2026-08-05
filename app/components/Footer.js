@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { contactDetails } from "../lib/Data";
+
 /**
  * Footer — mirrors the Traavellio footer structure.
  *
@@ -26,7 +28,7 @@ const COLUMNS = [
       { label: "Home", href: "/" },
       { label: "About", href: "/about" },
       { label: "Tours", href: "/tours" },
-      { label: "Book a Trip", href: "/book-a-trip" },
+      { label: "Book a Trip", href: "/BookATrip" },
     ],
   },
   {
@@ -63,6 +65,26 @@ const SOCIALS = [
     name: "X",
     href: "https://x.com",
     d: "M4 4l7.5 9.5L4.5 20h2l6-6.2L17 20h3l-7.8-9.9L19.5 4h-2l-5.6 5.8L7.5 4H4z",
+  },
+];
+const CONTACT = [
+  {
+    label: "Email",
+    value: contactDetails.email,
+    href: `mailto:${contactDetails.email}`,
+    d: "M4 6h16v12H4zM4 7l8 6 8-6",
+  },
+  {
+    label: "Phone",
+    value: contactDetails.phone,
+    href: `tel:${contactDetails.phone.replace(/\s/g, "")}`,
+    d: "M6.5 3h3l1.5 4-2 1.5a12 12 0 005.5 5.5L16 12l4 1.5v3a2 2 0 01-2.2 2A16.5 16.5 0 014.5 5.2 2 2 0 016.5 3z",
+  },
+  {
+    label: "Address",
+    value: contactDetails.address,
+    href: null,
+    d: "M12 21s-7-5.2-7-10a7 7 0 1114 0c0 4.8-7 10-7 10zM12 13.4a2.4 2.4 0 100-4.8 2.4 2.4 0 000 4.8z",
   },
 ];
 
@@ -136,7 +158,7 @@ export default function Footer() {
           </div>
 
           <Link
-            href="/book-a-trip"
+            href="/BookATrip"
             className="group inline-flex items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 text-[15px] font-medium text-[#033D4A] transition-transform duration-300 hover:-translate-y-0.5"
           >
             Book a trip
@@ -169,6 +191,58 @@ export default function Footer() {
               </div>
             ))}
           </div>
+
+          {/* get in touch */}
+          <div className="flex w-full flex-col items-start gap-4 lg:w-[300px] lg:shrink-0">
+            <p className="text-[13px] text-[#7D7D7D]">Get in touch</p>
+            <ul className="flex w-full flex-col items-start gap-3">
+              {CONTACT.map((c) => {
+                const body = (
+                  <>
+                    <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full border border-white/15 text-white/70 transition-colors duration-300 group-hover/c:border-white group-hover/c:bg-white group-hover/c:text-[#033D4A]">
+                      <svg
+                        viewBox="0 0 24 24"
+                        className="h-[15px] w-[15px]"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d={c.d} />
+                      </svg>
+                    </span>
+                    <span className="flex flex-col items-start gap-0.5">
+                      <span className="text-[12px] text-[#7D7D7D]">
+                        {c.label}
+                      </span>
+                      <span className="text-[14px] leading-[1.45] text-white/75 transition-colors duration-300 group-hover/c:text-white">
+                        {c.value}
+                      </span>
+                    </span>
+                  </>
+                );
+
+                return (
+                  <li key={c.label} className="w-full">
+                    {c.href ? (
+                      <a
+                        href={c.href}
+                        className="group/c flex w-full items-start gap-3"
+                      >
+                        {body}
+                      </a>
+                    ) : (
+                      <div className="group/c flex w-full items-start gap-3">
+                        {body}
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
 
           {/* social */}
           <div className="flex flex-col items-start gap-4">

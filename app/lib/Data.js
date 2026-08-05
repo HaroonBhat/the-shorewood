@@ -182,3 +182,77 @@ export const navLinks = [
   { label: "Destinations", href: "/destinations" },
   { label: "Contact", href: "/contact" },
 ];
+
+export const milestones = [
+  { value: "100+", label: "Custom Itineraries Planned" },
+  { value: "15+", label: "Kashmir Destinations" },
+  { value: "20+", label: "Trusted Local Partners" },
+  { value: "24/7", label: "Travel Assistance" },
+  { value: "100%", label: "Personalized Experiences" },
+  { value: "Local", label: "Expert Guides" },
+];
+
+export const team = [
+  {
+    name: "Founder",
+    role: "Travel Curator",
+    img: "/images/team/founder.jpg",
+  },
+  {
+    name: "Local Experience Expert",
+    role: "Destination Specialist",
+    img: "/images/team/expert.jpg",
+  },
+  {
+    name: "Tour Coordinator",
+    role: "Guest Relations",
+    img: "/images/team/coordinator.jpg",
+  },
+  {
+    name: "Adventure Guide",
+    role: "Outdoor Experiences",
+    img: "/images/team/guide.jpg",
+  },
+];
+
+// export const team = [
+//   { name: "James Carter", role: "Operations Manager", img: U("1500648767791-00dcc994a43e", 800) },
+//   { name: "Sophia Bennett", role: "Travel Expert", img: U("1494790108377-be9c29b29330", 800) },
+//   { name: "Willy Johnson", role: "Trip Lead", img: U("1507003211169-0a1dd7228f2d", 800) },
+//   { name: "Olivia Scott", role: "Experience Designer", img: U("1534528741775-53994a69daeb", 800) },
+// ];
+
+export const contactDetails = {
+  phone: "+91 7889393447",
+  email: "support@theshorewood.com",
+  address: "Srinagar, Jammu & Kashmir, India",
+  hours: "Mon – Sun, 24/7",
+};
+
+export const faqs = [
+  {
+    q: "What destinations do you cover?",
+    a: "We offer curated experiences across Srinagar, Gulmarg, Pahalgam, Sonamarg, Doodhpathri, Yusmarg, Gurez Valley, Bangus Valley, and other breathtaking locations across Kashmir.",
+  },
+  {
+    q: "Can I customize my itinerary?",
+    a: "Absolutely. Every journey is tailored to your interests, travel dates, budget, and preferred experiences, ensuring a personalized Kashmir adventure.",
+  },
+  {
+    q: "Do you arrange hotels and transportation?",
+    a: "Yes. We handle premium hotels, luxury stays, houseboats, airport transfers, private cabs, sightseeing, and complete travel logistics.",
+  },
+  {
+    q: "Do you offer honeymoon and family packages?",
+    a: "Yes. We specialize in honeymoon escapes, family vacations, adventure tours, luxury holidays, corporate trips, and customized group tours.",
+  },
+  {
+    q: "How can I book a tour?",
+    a: "Simply contact us through our website, WhatsApp, or phone. Our travel experts will discuss your requirements and prepare a personalized itinerary with transparent pricing.",
+  },
+  {
+    q: "Will I have support during my trip?",
+    a: "Yes. Our local team is available throughout your journey to assist with itinerary changes, transportation, accommodation, and any travel-related assistance you may need.",
+  },
+];
+
