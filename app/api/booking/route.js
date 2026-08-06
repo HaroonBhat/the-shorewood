@@ -112,10 +112,6 @@ export async function POST(req) {
     );
   }
 
-  /* ── 2. confirm to the customer (best effort) ──────── */
-  // Never allowed to fail the request: the enquiry is already delivered.
-  // Skipped when the domain has no mail route, otherwise the auto-reply
-  // bounces straight back into our own inbox (typos, junk submissions).
   try {
     const deliverable = await domainCanReceiveMail(payload.email);
 
