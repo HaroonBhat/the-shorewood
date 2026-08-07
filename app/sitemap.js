@@ -7,7 +7,7 @@ export default function sitemap() {
     "",
     "/about",
     "/tours",
-    "/book-a-trip",
+    "/BookATrip",
     "/contact",
     "/privacy-policy",
     "/terms-conditions",

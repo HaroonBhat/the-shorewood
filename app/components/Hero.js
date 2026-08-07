@@ -131,29 +131,29 @@ export default function Hero() {
       {/* ── centre column ────────────────────────────── */}
       <div className="relative z-[3] flex w-full max-w-[1200px] flex-col items-center">
         <div className="flex w-full flex-col items-center gap-6 pt-14">
-       <h1
-  className={`${orbit.className} max-w-[890px] text-center text-[40px] font-semibold leading-[1.2] tracking-[-0.045em] text-white sm:text-[56px] lg:text-[80px]`}
-  style={{ textShadow: "0 3px 12px rgba(0,0,0,0.37)" }}
->
-  {HEADLINE.map((word, wordIndex) => (
-    <span key={wordIndex} className="inline-block">
-      {word.split("").map((letter, letterIndex) => (
-        <span
-          key={letterIndex}
-          className="inline-block animate-word-in"
-          style={{
-            animationDelay: `${1 + (wordIndex * word.length + letterIndex) * 0.1}s`,
-          }}
-        >
-          {letter}
-        </span>
-      ))}
+          <h1
+            className={`${orbit.className} max-w-[890px] text-center text-[40px] font-semibold leading-[1.2] tracking-[-0.045em] text-white sm:text-[56px] lg:text-[80px]`}
+            style={{ textShadow: "0 3px 12px rgba(0,0,0,0.37)" }}
+          >
+            {HEADLINE.map((word, wordIndex) => (
+              <span key={wordIndex} className="inline-block">
+                {word.split("").map((letter, letterIndex) => (
+                  <span
+                    key={letterIndex}
+                    className="inline-block animate-word-in"
+                    style={{
+                      animationDelay: `${1 + (wordIndex * word.length + letterIndex) * 0.1}s`,
+                    }}
+                  >
+                    {letter}
+                  </span>
+                ))}
 
-      {/* space between words */}
-      {wordIndex < HEADLINE.length - 1 && "\u00A0"}
-    </span>
-  ))}
-</h1>
+                {/* space between words */}
+                {wordIndex < HEADLINE.length - 1 && "\u00A0"}
+              </span>
+            ))}
+          </h1>
           <p
             className="max-w-xl animate-word-in text-center text-[15px] leading-relaxed text-white/85 sm:text-[17px]"
             style={{ animationDelay: "0.85s" }}
@@ -183,7 +183,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      ``
+
       {/* ── trust indicators ─────────────────────────── */}
       <div className="absolute bottom-0 left-1/2 z-[3] flex w-full -translate-x-1/2 animate-word-in flex-wrap items-center justify-center gap-x-6 gap-y-3 pb-6 sm:gap-x-10"
         style={{ animationDelay: "1.75s" }}

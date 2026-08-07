@@ -2,18 +2,34 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experiences from "./components/Experiences";
-// import Destinations from "./components/Destinations";
 import Packages from "./components/Destinations";
 import WhyUs from "./components/Whyus";
 import Testimonials from "./components/Testimonials";
 import Blogs from "./components/Blogs";
 import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+
 
 export const metadata = {
-  title: "Shorewood — Curated Coastal Journeys",
+  title: "The Shorewood | Luxury Kashmir Tours & Travel Experiences",
   description:
-    "Curated coastal journeys designed to be felt, not rushed. Handpicked stays, local guides and slow mornings by the water.",
+    "Discover luxury Kashmir travel with The Shorewood. Explore customized tours, premium stays, houseboats, sightseeing, honeymoon packages, and unforgettable journeys across Srinagar, Gulmarg, Pahalgam, Sonamarg, and beyond.",
+  keywords: [
+    "The Shorewood",
+    "Luxury Kashmir Tours",
+    "Kashmir Travel",
+    "Kashmir Tour Packages",
+    "Luxury Travel Kashmir",
+    "Srinagar Tours",
+    "Gulmarg Tour",
+    "Pahalgam Tour",
+    "Sonamarg Tour",
+    "Houseboat Kashmir",
+    "Customized Kashmir Itinerary",
+    "Private Kashmir Tours",
+    "Honeymoon Packages Kashmir",
+    "Kashmir Vacation",
+    "Travel Agency Kashmir"
+  ],
 };
 
 export default function Home() {
