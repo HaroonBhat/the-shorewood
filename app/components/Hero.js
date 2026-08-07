@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Orbitron } from "next/font/google";
 
 const orbit = Orbitron({
-  weight:"900",
-  subsets :["latin"],
+  weight: "900",
+  subsets: ["latin"],
 })
 
 
@@ -68,13 +68,13 @@ const TRUST = [
     label: "24/7 Travel Assistance",
     short: "24/7 Support",
     icon: (
-  <>
-    <path d="M4 12a8 8 0 0116 0" />
-    <rect x="3" y="12" width="3" height="6" rx="1.5" />
-    <rect x="18" y="12" width="3" height="6" rx="1.5" />
-    <path d="M6 18a6 6 0 006 3h2" />
-  </>
-),
+      <>
+        <path d="M4 12a8 8 0 0116 0" />
+        <rect x="3" y="12" width="3" height="6" rx="1.5" />
+        <rect x="18" y="12" width="3" height="6" rx="1.5" />
+        <path d="M6 18a6 6 0 006 3h2" />
+      </>
+    ),
   },
 ];
 
@@ -88,7 +88,9 @@ export default function Hero() {
           loop
           muted
           playsInline
-          // poster="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1800&q=70&auto=format&fit=crop"
+          role="presentation"
+          preload="metadata"
+          aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
         >
           <source
@@ -129,22 +131,29 @@ export default function Hero() {
       {/* ── centre column ────────────────────────────── */}
       <div className="relative z-[3] flex w-full max-w-[1200px] flex-col items-center">
         <div className="flex w-full flex-col items-center gap-6 pt-14">
-          <h1
-            className={ ` ${orbit.className} max-w-[890px] text-center text-[40px] font-semibold leading-[1.2] tracking-[-0.045em] text-white sm:text-[56px] lg:text-[80px] `}
-            style={{ textShadow: "0 3px 12px rgba(0,0,0,0.37)" }}
-          >
-            {HEADLINE.map((word, i) => (
-              <span
-                key={`${word}-${i}`}
-                className="inline-block animate-word-in"
-                style={{ animationDelay: `${0.15 + i * 0.09}s` }}
-              >
-                {word}
-                {i < HEADLINE.length - 1 && "\u00A0"}
-              </span>
-            ))}
-          </h1>
+       <h1
+  className={`${orbit.className} max-w-[890px] text-center text-[40px] font-semibold leading-[1.2] tracking-[-0.045em] text-white sm:text-[56px] lg:text-[80px]`}
+  style={{ textShadow: "0 3px 12px rgba(0,0,0,0.37)" }}
+>
+  {HEADLINE.map((word, wordIndex) => (
+    <span key={wordIndex} className="inline-block">
+      {word.split("").map((letter, letterIndex) => (
+        <span
+          key={letterIndex}
+          className="inline-block animate-word-in"
+          style={{
+            animationDelay: `${1 + (wordIndex * word.length + letterIndex) * 0.1}s`,
+          }}
+        >
+          {letter}
+        </span>
+      ))}
 
+      {/* space between words */}
+      {wordIndex < HEADLINE.length - 1 && "\u00A0"}
+    </span>
+  ))}
+</h1>
           <p
             className="max-w-xl animate-word-in text-center text-[15px] leading-relaxed text-white/85 sm:text-[17px]"
             style={{ animationDelay: "0.85s" }}
@@ -174,7 +183,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-``
+      ``
       {/* ── trust indicators ─────────────────────────── */}
       <div className="absolute bottom-0 left-1/2 z-[3] flex w-full -translate-x-1/2 animate-word-in flex-wrap items-center justify-center gap-x-6 gap-y-3 pb-6 sm:gap-x-10"
         style={{ animationDelay: "1.75s" }}

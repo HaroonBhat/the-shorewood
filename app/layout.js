@@ -13,11 +13,27 @@ const smooch = Smooch_Sans({
 });
 
 export const metadata = {
-
-  title: "The Shorewood",
-  description: "Luxury Kashmir Travel",
+  title: "The Shorewood | Luxury Kashmir Tours & Travel Experiences",
+  description:
+    "Discover luxury Kashmir travel with The Shorewood. Explore customized tours, premium stays, houseboats, sightseeing, honeymoon packages, and unforgettable journeys across Srinagar, Gulmarg, Pahalgam, Sonamarg, and beyond.",
+  keywords: [
+    "The Shorewood",
+    "Luxury Kashmir Tours",
+    "Kashmir Travel",
+    "Kashmir Tour Packages",
+    "Luxury Travel Kashmir",
+    "Srinagar Tours",
+    "Gulmarg Tour",
+    "Pahalgam Tour",
+    "Sonamarg Tour",
+    "Houseboat Kashmir",
+    "Customized Kashmir Itinerary",
+    "Private Kashmir Tours",
+    "Honeymoon Packages Kashmir",
+    "Kashmir Vacation",
+    "Travel Agency Kashmir"
+  ],
 };
-
 
 
 export default function RootLayout({ children }) {

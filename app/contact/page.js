@@ -6,11 +6,18 @@ import { contactDetails } from "../lib/Data";
 
 
 export const metadata = {
-  title: "Contact — The Shorewood",
+  title: "Contact The Shorewood | Plan Your Kashmir Journey",
   description:
-    "Tell us where you'd like to go and we'll plan the rest. Reach the Shorewood team by form, email or phone.",
+    "Contact The Shorewood for customized Kashmir itineraries, luxury travel planning, hotel bookings, sightseeing, and premium travel experiences.",
+  keywords: [
+    "Contact Shorewood",
+    "Travel Agency Srinagar",
+    "Kashmir Travel Contact",
+    "Luxury Travel Planner",
+    "Book Kashmir Tour",
+    "Travel Consultation Kashmir"
+  ],
 };
-
 const DETAILS = [
   {
     label: "Phone",

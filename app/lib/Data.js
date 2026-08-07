@@ -223,7 +223,7 @@ export const team = [
 // ];
 
 export const contactDetails = {
-  phone: "+91 7889393447",
+  phone: "+91 9596311857",
   email: "support@theshorewood.com",
   address: "Srinagar, Jammu & Kashmir, India",
   hours: "Mon – Sun, 24/7",

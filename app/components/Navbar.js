@@ -118,9 +118,9 @@ export default function Navbar() {
               <Image
                 src="/images/logo.jpg"
                 alt="Logo"
-                width="40"
-                height="40"
-                sizes="(max-width:1024px) 52vw,26vw"
+                width={40}
+                height={40}
+                priority
                 className="object-cover rounded-3xl"
               />
             </span>

@@ -5,11 +5,19 @@ import Faq from "../components/Faq";
 import { contactDetails } from "../lib/Data";
 
 
-
 export const metadata = {
-  title: "Book a Trip — Shorewood",
+  title: "Plan Your Kashmir Trip | Request an Itinerary | The Shorewood",
   description:
-    "Tell us how you like to travel and we'll build the itinerary around you. No obligation, and a reply within one working day.",
+    "Tell us your travel plans and our experts will create a personalized Kashmir itinerary with luxury stays, sightseeing, transport, and unforgettable experiences.",
+  keywords: [
+    "Book Kashmir Tour",
+    "Custom Kashmir Itinerary",
+    "Luxury Kashmir Trip",
+    "Travel Planner Kashmir",
+    "Private Tour Booking",
+    "Kashmir Vacation Planner",
+    "Kashmir Travel Agency"
+  ],
 };
 
 const REASSURANCE = [

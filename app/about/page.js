@@ -3,11 +3,19 @@ import Link from "next/link";
 
 import Reveal from "../components/Reveal";
 import { milestones, team } from "../lib/Data";
-
 export const metadata = {
-  title: "About The Shorewood | Luxury Kashmir Tours & Travel",
+  title: "About The Shorewood | Luxury Travel Experts in Kashmir",
   description:
-    "Discover The Shorewood, a luxury Kashmir travel company creating personalized holidays, premium accommodations, authentic local experiences, and unforgettable journeys across the Valley.",
+    "Learn about The Shorewood, a luxury travel company creating personalized Kashmir travel experiences with local expertise, premium hospitality, and unforgettable journeys.",
+  keywords: [
+    "About The Shorewood",
+    "Luxury Travel Company",
+    "Travel Experts Kashmir",
+    "Kashmir Tour Operator",
+    "Luxury Kashmir Holidays",
+    "Local Travel Experts",
+    "Premium Kashmir Travel"
+  ],
 };
 
 const HERO_LETTERS = "ABOUT THE SHOREWOOD";
