@@ -101,7 +101,7 @@ export default function Navbar() {
       {/* ── centred pill ─────────────────────────────── */}
       <div className="pointer-events-none fixed left-1/2 top-0 z-40 w-full -translate-x-1/2 px-5 py-4 sm:px-10 sm:py-2">
         <nav
-          className="pointer-events-auto mx-auto flex w-max max-w-[1200px] animate-nav-in items-center gap-7 rounded-[60px] px-4 py-3"
+          className="pointer-events-auto mx-auto flex w-max max-w-300 animate-nav-in items-center gap-7 rounded-[60px] px-4 py-3"
           style={{
             backgroundColor: "rgba(0,0,0,0.2)",
             backdropFilter: "blur(5px)",
@@ -111,16 +111,13 @@ export default function Navbar() {
         >
           <Link href="/" className="flex items-center gap-2" onClick={close}>
             <span className="grid h-8 w-8 place-items-center rounded-full bg-white text-[#033D4A]">
-              {/* <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M2 16c2.2 0 2.2 1.5 4.4 1.5S8.6 16 10.8 16s2.2 1.5 4.4 1.5S17.4 16 19.6 16H22" />
-                <path d="M4 12l8-8 8 8" />
-              </svg> */}
               <Image
-                src="/images/logo.jpg"
-                alt="Logo"
+                src="/logo.jpg"
+                alt="The Shorewood Logo"
                 width={40}
                 height={40}
-                priority
+                loading="eager"
+                unoptimized
                 className="object-cover rounded-3xl"
               />
             </span>
@@ -140,8 +137,8 @@ export default function Navbar() {
             className="relative grid h-8 w-8 cursor-pointer place-items-center rounded-full p-1.5 outline-none focus-visible:ring-2 focus-visible:ring-white/70"
           >
             <span className="relative block h-4 w-5">
-              <span className={`absolute left-0 h-0.5 w-5 rounded-full bg-white transition-all duration-300 ease-out ${open ? "top-[7px] rotate-45" : "top-[4px]"}`} />
-              <span className={`absolute left-0 h-0.5 w-5 rounded-full bg-white transition-all duration-300 ease-out ${open ? "top-[7px] -rotate-45" : "top-[14px]"}`} />
+              <span className={`absolute left-0 h-0.5 w-5 rounded-full bg-white transition-all duration-300 ease-out ${open ? "top-1.75 rotate-45" : "top1"}`} />
+              <span className={`absolute left-0 h-0.5 w-5 rounded-full bg-white transition-all duration-300 ease-out ${open ? "top-1.75 -rotate-45" : "top-1"}`} />
             </span>
           </button>
         </nav>
@@ -196,10 +193,10 @@ export default function Navbar() {
             ref={panelRef}
             className="relative z-10 flex h-full flex-col justify-center overflow-y-auto overscroll-contain px-6 py-24 sm:px-10 lg:px-16"
           >
-            <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-20">
+            <div className="mx-auto grid w-full max-w-300 items-center gap-10 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-20">
               {/* ── left: preview image ── */}
               <figure
-                className="relative hidden aspect-[4/5] max-h-[62vh] overflow-hidden rounded-[24px] lg:block"
+                className="relative hidden aspect-4/5 max-h-[62vh] overflow-hidden rounded-3xl lg:block"
                 style={{
                   opacity: open ? 1 : 0,
                   transform: open ? "scale(1)" : "scale(1.06)",
