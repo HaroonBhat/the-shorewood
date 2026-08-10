@@ -24,6 +24,9 @@ export const metadata = {
     "Gulmarg luxury hotels",
     "Pahalgam travel"
   ],
+   icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "The Shorewood | Where Nature Finds Luxury",
     description:

@@ -140,7 +140,7 @@ export default function Hero() {
                 {word.split("").map((letter, letterIndex) => (
                   <span
                     key={letterIndex}
-                    className="inline-block animate-word-in"
+                    className=" animate-word-in"
                     style={{
                       animationDelay: `${1 + (wordIndex * word.length + letterIndex) * 0.1}s`,
                     }}
