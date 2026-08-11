@@ -98,7 +98,8 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ── centred pill ─────────────────────────────── */}
+      {/* ── centred pill ─────────────────────────────── */}    
+      
       <div className="pointer-events-none fixed left-1/2 top-0 z-40 w-full -translate-x-1/2 px-5 py-4 sm:px-10 sm:py-2">
         <nav
           className="pointer-events-auto mx-auto flex w-max max-w-300 animate-nav-in items-center gap-7 rounded-[60px] px-4 py-3"

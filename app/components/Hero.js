@@ -131,7 +131,7 @@ export default function Hero() {
       {/* ── centre column ────────────────────────────── */}
       <div className="relative z-[3] flex w-full max-w-[1200px] flex-col items-center">
         <div className="flex w-full flex-col items-center gap-6 pt-14">
-          <h1
+          <p
             className={`${orbit.className} max-w-[890px] text-center text-[40px] font-semibold leading-[1.2] tracking-[-0.045em] text-white sm:text-[56px] lg:text-[80px]`}
             style={{ textShadow: "0 3px 12px rgba(0,0,0,0.37)" }}
           >
@@ -153,13 +153,13 @@ export default function Hero() {
                 {wordIndex < HEADLINE.length - 1 && "\u00A0"}
               </span>
             ))}
-          </h1>
-          <p
+          </p>
+          <h1
             className="max-w-xl animate-word-in text-center text-[15px] leading-relaxed text-white/85 sm:text-[17px]"
             style={{ animationDelay: "0.85s" }}
           >
             Where Nature Finds Luxury. Private Kashmir journeys, designed around you.
-          </p>
+          </h1>
 
           <Link
             href="/BookATrip"

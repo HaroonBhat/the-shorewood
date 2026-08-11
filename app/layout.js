@@ -20,11 +20,11 @@ export const metadata = {
     "The Shorewood",
     "Luxury Kashmir Travel",
     "Kashmir luxury stays",
-    "Kashmir tour packages",
+    "Kashmir tour itineraries",
     "Gulmarg luxury hotels",
     "Pahalgam travel"
   ],
-   icons: {
+  icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
@@ -40,12 +40,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
+       {/* Made by  Haroon Rashid & Rayyan Lone */}
       <body className={`${smooch.className} bg-sand text-[#191919] antialiased`}>
         <AuroraBackground />
         <Navbar />
         {children}
-
-        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-VN5K74QKT5"
           strategy="afterInteractive"
