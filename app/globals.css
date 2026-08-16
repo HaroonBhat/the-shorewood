@@ -259,3 +259,58 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+/* 
+@keyframes loader-logo {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-loader-logo {
+  animation: loader-logo 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+} */
+
+/* ── loading screen ──────────────────────────────────── */
+
+/* each wordmark letter rises out of its own clipping box */
+@keyframes loaderChar {
+  from {
+    opacity: 0;
+    transform: translateY(110%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* hairline draws outward from the centre */
+@keyframes loaderRule {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 190px;
+    opacity: 1;
+  }
+}
+
+@keyframes loaderFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

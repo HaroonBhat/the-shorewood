@@ -14,7 +14,7 @@ export default function About() {
 
         <div className="relative">
 
-          <div className="relative aspect-[4/5] w-[78%] overflow-hidden rounded-[28px]">
+          <div className="relative aspect-[4/5] w-[78%] overflow-hidden rounded-[28px] border-[5px] border-white">
             <Image
               src="/images/about1.jpg"
               alt="Luxury travel experience in Kashmir"

@@ -7,8 +7,8 @@ export const experiences = [
   {
     title: "Luxury Shikara Ride",
     text: "Cruise through the peaceful waters of Dal Lake aboard a traditional Shikara while enjoying breathtaking Himalayan views and authentic Kashmiri hospitality.",
-    img: "/images/dallake.jpg",
-    href: "/experiences/shikara-ride",
+    img: "/images/experiences/dallake.jpg",
+    href: "/images/experiences/dallake.jpg",
   },
   {
     title: "Gulmarg Gondola",
@@ -178,7 +178,7 @@ export const posts = [
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Tours", href: "/tours" },
+  { label: "Experience", href: "/experiences" },
   { label: "Destinations", href: "/destinations" },
   { label: "Contact", href: "/contact" },
 ];
@@ -256,3 +256,264 @@ export const faqs = [
   },
 ];
 
+export const seasons = [
+  {
+    id: "spring",
+    name: "Spring",
+    months: "March – May",
+    temp: "8 – 20°C",
+    tagline: "Blossoms, gardens & fresh mountain air",
+
+    // Kashmir spring / tulip garden
+    img: "/images/seasons/s2.jpg",
+    thumb: "/images/seasons/s2.jpg",
+
+    accent: "#7FA650",
+
+    blurb:
+      "Spring brings Kashmir back to life. Almond and cherry blossoms appear across Srinagar, the Mughal gardens bloom beneath the Zabarwan mountains, and the valley fills with fresh colour. It is a beautiful time for slow mornings, garden walks and discovering Kashmir at a gentler pace.",
+
+    highlights: [
+      "Walk through Srinagar's famous Mughal gardens",
+      "Experience the tulip season beneath the Zabarwan hills",
+      "See almond and cherry blossoms around Srinagar",
+      "Enjoy quieter roads and fewer peak-season crowds",
+    ],
+
+    bestFor: ["Couples", "Photography", "Slow escapes"],
+    note: "Pack layers — mornings and evenings can still feel cool.",
+  },
+
+  {
+    id: "summer",
+    name: "Summer",
+    months: "June – August",
+    temp: "15 – 30°C",
+    tagline: "Green valleys & long mountain days",
+
+    // Green Pahalgam / Kashmir valley
+    img: "/images/seasons/sa3.jpg",
+    thumb: "/images/seasons/sa2.jpg",
+
+    accent: "#2E8C8C",
+
+    blurb:
+      "Summer is Kashmir at its greenest. Dal Lake comes alive with shikaras, Gulmarg and Pahalgam open into wide alpine landscapes, and the higher mountain trails become accessible. For travellers who want to explore, this is a season made for long days outdoors.",
+
+    highlights: [
+      "Stay beside Dal Lake and experience a private shikara ride",
+      "Explore the green meadows of Gulmarg and Pahalgam",
+      "Discover mountain trails and alpine landscapes",
+      "Enjoy comfortable days for sightseeing and outdoor experiences",
+    ],
+
+    bestFor: ["Families", "Exploration", "Mountain experiences"],
+    note: "Summer is popular — reserve preferred stays and experiences early.",
+  },
+
+  {
+    id: "autumn",
+    name: "Autumn",
+    months: "September – November",
+    temp: "5 – 22°C",
+    tagline: "Golden chinars & harvest season",
+
+    // Autumn chinar trees in Kashmir
+    img: "/images/seasons/a2.jpg",
+    thumb:"/images/seasons/a3.jpg",
+
+    accent: "#C8792F",
+
+    blurb:
+      "Autumn is one of Kashmir's most atmospheric seasons. Chinar trees turn shades of amber and gold, orchards fill with apples and walnuts, and the mountains stand beneath exceptionally clear skies. It is a season for travellers who prefer beautiful landscapes, quiet roads and a slower rhythm.",
+
+    highlights: [
+      "See the golden chinars around Srinagar",
+      "Experience saffron country around Pampore",
+      "Visit apple and walnut orchards during harvest",
+      "Enjoy crisp air and clear mountain views",
+    ],
+
+    bestFor: ["Couples", "Photography", "Luxury escapes"],
+    note: "Autumn is brief — plan ahead if you want to catch the chinar colours.",
+  },
+
+  {
+    id: "winter",
+    name: "Winter",
+    months: "December – February",
+    temp: "-6 – 10°C",
+    tagline: "Snow, mountains & quiet escapes",
+
+    // Gulmarg snow / winter Kashmir
+    img: "/images/seasons/w1.jpg",
+    thumb:"/images/seasons/w2.jpg",
+
+    accent: "#5B7C99",
+
+    blurb:
+      "Winter transforms Kashmir into a quieter world of snow-covered mountains, frozen mornings and warm Kashmiri hospitality. Gulmarg becomes a destination for skiing and snow experiences, while Srinagar takes on a beautifully intimate character of its own.",
+
+    highlights: [
+      "Experience skiing and snow in Gulmarg",
+      "Ride the Gulmarg Gondola into the high mountains",
+      "Wake up to snow-covered Srinagar and mountain views",
+      "Warm up with kahwa and authentic Kashmiri cuisine",
+    ],
+
+    bestFor: ["Snow lovers", "Couples", "Private escapes"],
+    note: "Heavy snowfall can affect mountain roads, so flexible plans are recommended.",
+  },
+];
+
+
+export const places = [
+  {
+    name: "Srinagar",
+    text: "Dal Lake, Mughal gardens, old-city charm and the perfect beginning to a Kashmir journey.",
+
+    // Dal Lake / Srinagar
+    img: "/images/destinations/srinagar.jpg",
+
+    seasons: "All year",
+  },
+
+  {
+    name: "Gulmarg",
+    text: "Alpine meadows, mountain views and unforgettable snow experiences in winter.",
+
+    // Gulmarg meadow / mountains
+    img: "/images/experiences/Gondola.jpg",
+
+    seasons: "Winter & summer",
+  },
+
+  {
+    name: "Pahalgam",
+    text: "Pine forests, the Lidder River and peaceful mountain landscapes made for slow days.",
+
+    // Pahalgam valley / Lidder River
+    img:"/images/destinations/Pahalgam.jpg",
+
+    seasons: "Spring – autumn",
+  },
+
+  {
+    name: "Sonamarg",
+    text: "Dramatic mountain scenery, alpine valleys and the gateway towards the high Himalayas.",
+
+    // Sonamarg mountains
+    img:"/images/destinations/Sonamarg.jpg",
+    seasons: "Summer & autumn",
+  },
+];
+
+export const experienceList = [
+  {
+    id: "dal-lake",
+    name: "Dal Lake",
+    text: "A private morning on the water, with quiet channels, mountain views and the valley waking around you.",
+    img: "/images/experiences/dallake.jpg",
+    icon: "boat",
+    duration: "3 – 4 hours",
+    best: "Spring – autumn",
+    detail:
+      "Begin your day on Dal Lake as Srinagar slowly comes to life. Settle into a private shikara, take in the reflections of the surrounding mountains and explore the quieter corners of the lake at an unhurried pace.",
+    includes: [
+      "Private shikara experience",
+      "Local boatman",
+      "Early-morning departure",
+      "Kahwa on the water",
+    ],
+  },
+
+  {
+    id: "kashmiri-hospitality",
+    name: "Kashmiri Hospitality",
+    text: "Warm hospitality, traditional kahwa and the quiet rituals that make a journey feel personal.",
+    img: "/images/expPage/hosp.jpg",
+    icon: "cup",
+    duration: "An evening",
+    best: "All year",
+    detail:
+      "Experience the warmth of Kashmiri hospitality through an evening shaped around good food, traditional kahwa and conversation. Discover the customs, stories and everyday traditions that give Kashmir its character.",
+    includes: [
+      "Traditional Kashmiri kahwa",
+      "Locally prepared dishes",
+      "Introduction to Kashmiri traditions",
+      "An intimate, unhurried evening",
+    ],
+  },
+
+  {
+    id: "mountain-escapes",
+    name: "Mountain Escapes",
+    text: "Trade the city for pine forests, alpine meadows and the quiet of the Kashmir mountains.",
+    img: "/images/seasons/w1.jpg",
+    icon: "mountain",
+    duration: "Full day",
+    best: "Summer & autumn",
+    detail:
+      "Travel beyond Srinagar into the mountain landscapes of Pahalgam, Sonamarg and the surrounding valleys. Choose a gentle walk, a scenic drive or simply spend the day surrounded by nature, with the journey shaped around your pace.",
+    includes: [
+      "Private vehicle and driver",
+      "Scenic mountain routes",
+      "Walks suited to your pace",
+      "Time to explore and unwind",
+    ],
+  },
+
+  {
+    id: "kashmiri-cuisine",
+    name: "Kashmiri Cuisine",
+    text: "Discover the flavours of Kashmir, from traditional breads and kahwa to saffron and Wazwan.",
+    img: "/images/expPage/cuisine.jpg",
+    icon: "utensils",
+    duration: "Half day",
+    best: "All year",
+    detail:
+      "Food is one of the most intimate ways to experience Kashmir. Explore local flavours, discover traditional breads and spices, learn about saffron and experience the rich culinary traditions behind Kashmiri cuisine.",
+    includes: [
+      "Traditional Kashmiri breakfast experience",
+      "Local markets and food culture",
+      "Kashmiri cuisine tasting",
+      "Kahwa and traditional flavours",
+    ],
+  },
+
+  {
+    id: "culture-heritage",
+    name: "Culture & Heritage",
+    text: "Discover Srinagar's old city, Mughal gardens, traditional crafts and the stories behind them.",
+    img: "/images/expPage/her.jpg",
+    icon: "arch",
+    duration: "Full day",
+    best: "Spring – autumn",
+    detail:
+      "Go beyond the usual sights and discover the cultural layers of Srinagar. Walk through the old city, visit historic gardens and discover the craftsmanship that Kashmir has carried through generations.",
+    includes: [
+      "Old-city Srinagar exploration",
+      "Mughal gardens",
+      "Traditional Kashmiri crafts",
+      "Local history and cultural stories",
+    ],
+  },
+
+  {
+    id: "gulmarg-winter",
+    name: "Winter in Gulmarg",
+    text: "Step into a snow-covered mountain world surrounded by forests, peaks and unforgettable winter landscapes.",
+    img: U("1548777123-e216912df7d8", 1400),
+    icon: "snow",
+    duration: "1 – 3 days",
+    best: "December – February",
+    detail:
+      "When winter arrives, Gulmarg becomes one of Kashmir's most spectacular mountain escapes. Ride the Gondola, experience the snow-covered meadows and spend your days surrounded by the dramatic landscapes of the Himalayas.",
+    includes: [
+      "Gulmarg Gondola experience",
+      "Snow and mountain activities",
+      "Private transport from Srinagar",
+      "Winter accommodation options",
+    ],
+  },
+];

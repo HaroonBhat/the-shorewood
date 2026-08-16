@@ -30,7 +30,6 @@ export default function Destinations() {
                 sizes="(max-width: 1024px) 92vw, 60vw"
                 className={`-z-20 object-cover transition-opacity duration-700 ${i === active ? "opacity-100" : "opacity-0"
                   }`}
-                priority={i === 0}
               />
             ))}
             <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/75 via-black/15 to-black/25" />

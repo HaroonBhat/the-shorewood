@@ -7,7 +7,7 @@ const CARD_ASPECT = "256 / 324";
 function Card({ item, flipped }) {
   const image = (
     <div
-      className="relative w-full overflow-hidden rounded-[16px]"
+      className="relative w-full overflow-hidden rounded-[16px] "
       style={{ aspectRatio: CARD_ASPECT }}
     >
       <Image
@@ -15,13 +15,13 @@ function Card({ item, flipped }) {
         alt={item.title}
         fill
         sizes="(max-width: 640px) 80vw, (max-width: 1024px) 45vw, 285px"
-        className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]"
+        className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.15]"
       />
     </div>
   );
 
   const text = (
-    <div className="flex w-full flex-col  items-start gap-1">
+    <div className="flex w-full flex-col  items-start gap-1 ">
       <h3 className="w-full text-[20px] font-medium leading-[1.3] mt-7 sm:mt-1 tracking-[-0.03em] text-[#191919] sm:text-[30px]">
         {item.title}
       </h3>
@@ -34,7 +34,7 @@ function Card({ item, flipped }) {
   return (
     <Link
       href={item.href}
-      className="group flex w-full flex-col items-center gap-2.5"
+      className="group flex w-full flex-col items-center gap-2.5 "
     >
       {flipped ? (
         <>
@@ -104,7 +104,7 @@ export default function Experiences() {
           </div>
 
           {/* ── footer row ──────────────────────────── */}
-          <div className="mt-2 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <div className="mt-2 flex flex-col items-center gap-4 sm:flex-row sm:justify-center ">
             <p className="text-[15px] text-[#545454]">
               Explore more journeys waiting for you
             </p>

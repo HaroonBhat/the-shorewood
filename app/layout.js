@@ -6,6 +6,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Script from "next/script";
+import LoadingScreen from "./components/LoadingScreen";
 
 const smooch = Smooch_Sans({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-scroll-behavior="smooth">
        {/* Made by  Haroon Rashid & Rayyan Lone */}
       <body className={`${smooch.className} bg-sand text-[#191919] antialiased`}>
+        <LoadingScreen />
         <AuroraBackground />
         <Navbar />
         {children}

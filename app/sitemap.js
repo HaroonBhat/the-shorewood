@@ -9,8 +9,10 @@ export default function sitemap() {
     "/tours",
     "/BookATrip",
     "/contact",
-    "/privacy-policy",
-    "/terms-conditions",
+    "/experiences",
+    "/destinations",
+    // "/privacy-policy",
+    // "/terms-conditions",
   ];
 
   return routes.map((route) => ({

@@ -3,23 +3,6 @@ import Link from "next/link";
 
 import { contactDetails } from "../lib/Data";
 
-/**
- * Footer — mirrors the Traavellio footer structure.
- *
- *   footer            column, gap 40px, padding-bottom 40px
- *     ├ conversion    padding 200px 0 80px, full-bleed photo overlay
- *     │   ├ marquee   86px strip pinned to top:0
- *     │   └ container gap 40px, max-width 1200px
- *     │       ├ titles  gap 24px, max-width 520px, centred
- *     │       └ button  "Book a trip" pill
- *     └ container     column, gap 56px, padding 0 40px
- *         ├ top       row, gap 72px (column + 64px on mobile)
- *         │   ├ links   row, gap 40px — 3 columns, each gap 16px
- *         │   │           nav items gap 8px; each link has a 1px "Line"
- *         │   │           that grows to 25px on hover
- *         │   └ social  row, gap 16px
- *         └ bottom    1px rule + row, padding 20px 0, space-between
- */
 
 const COLUMNS = [
   {
@@ -48,7 +31,7 @@ const COLUMNS = [
 const SOCIALS = [
   {
     name: "Facebook",
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/people/The-Shorewood/61591843766991/",
     d: "M14 8h2V5h-2a3.5 3.5 0 00-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V8.8c0-.5.4-.8 1-.8z",
   },
   {
@@ -57,15 +40,15 @@ const SOCIALS = [
     d: "M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM4 8a4 4 0 014-4h8a4 4 0 014 4v8a4 4 0 01-4 4H8a4 4 0 01-4-4V8zm12.5-.5h.01",
   },
   {
-    name: "LinkedIn",
-    href: "https://linkedin.com",
-    d: "M6 9v10M6 5.5v.01M11 19v-5.5a2.5 2.5 0 015 0V19M11 9v10",
+    name: "WhatsApp",
+    href: "https://wa.me/919596311857",
+    d: "M20 11.5a8.5 8.5 0 0 1-12.9 7.3L3 20l1.3-3.9A8.5 8.5 0 1 1 20 11.5Z M8.5 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.3.1.5-.1.7l-.5.6c.5 1 1.3 1.8 2.3 2.3l.6-.5c.2-.2.4-.2.7-.1l1.7.7c.3.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.5.3-1.1.4-1.6.2-2.8-.7-5.1-3-5.8-5.8-.2-.6-.1-1.2.2-1.7Z",
   },
   {
-    name: "X",
-    href: "https://x.com",
-    d: "M4 4l7.5 9.5L4.5 20h2l6-6.2L17 20h3l-7.8-9.9L19.5 4h-2l-5.6 5.8L7.5 4H4z",
-  },
+  name: "YouTube",
+  href: "https://www.youtube.com/channel/UC9C2ds2aGLZvGKaRFFN1GDQ",
+  d: "M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5v-7L16 12l-6.4 3.5Z",
+},
 ];
 const CONTACT = [
   {
