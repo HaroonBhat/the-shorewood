@@ -109,7 +109,7 @@ export default function Experiences() {
               Explore more journeys waiting for you
             </p>
             <Link
-              href="/tours"
+              href="/experiences"
               className="group inline-flex items-center gap-3 rounded-full bg-[#033D4A] py-2 pl-6 pr-2 text-[15px] font-medium text-white transition-transform duration-300 hover:-translate-y-0.5"
             >
               View

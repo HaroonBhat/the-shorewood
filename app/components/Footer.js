@@ -10,17 +10,18 @@ const COLUMNS = [
     links: [
       { label: "Home", href: "/" },
       { label: "About", href: "/about" },
-      { label: "Tours", href: "/tours" },
+      { label: "Contact Us", href: "/contact" },
       { label: "Book a Trip", href: "/BookATrip" },
     ],
   },
   {
-    title: "Documentation",
-    links: [
-      { label: "Blogs", href: "/blogs" },
-      { label: "Privacy Policy", href: "/policies/privacy-policy" },
-      { label: "Terms & Conditions", href: "/policies/terms-conditions" },
-    ],
+   title: "Explore",
+  links: [
+    { label: "Destinations", href: "/destinations" },
+    { label: "Experiences", href: "/experiences" },
+    { label: "Blogs", href: "/blogs" },
+    // { label: "Plan Your Trip", href: "/book-a-trip" },
+  ],
   },
   {
     title: "Other Pages",

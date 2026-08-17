@@ -9,8 +9,23 @@ import { navLinks } from "../lib/Data";
 const PILL_SHADOW =
   "0px 0.52px 0.52px -0.94px rgba(0,0,0,0.18), 0px 1.57px 1.57px -1.88px rgba(0,0,0,0.17), 0px 4.15px 4.15px -2.81px rgba(0,0,0,0.15), 0px 13px 13px -3.75px rgba(0,0,0,0.06)";
 
-const SOCIALS = ["Instagram", "Facebook", "LinkedIn"];
-
+const SOCIALS = [
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/people/The-Shorewood/61591843766991/",
+    
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/theshorewood/",
+    
+  },
+  {
+  name: "YouTube",
+  href: "https://www.youtube.com/channel/UC9C2ds2aGLZvGKaRFFN1GDQ",
+ 
+},
+];
 const EASE = "cubic-bezier(.16,1,.3,1)";
 const PANEL_MS = 800; // must match the panel transition duration
 
@@ -313,12 +328,12 @@ export default function Navbar() {
                   <div className="flex gap-5 text-[13px] text-white/45">
                     {SOCIALS.map((s) => (
                       <a
-                        key={s}
-                        href="https://www.instagram.com/theshorewood"
+                        key={s.name}
+                        href={s.href}
                         tabIndex={open ? 0 : -1}
                         className="outline-none transition-colors hover:text-white focus-visible:text-white"
                       >
-                        {s}
+                        {s.name}
                       </a>
                     ))}
                   </div>

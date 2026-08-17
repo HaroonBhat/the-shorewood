@@ -275,7 +275,7 @@ export default function AboutPage() {
                 Ready to discover the beauty of Kashmir?
               </p>
               <Link
-                href="/book-a-trip"
+                href="/BookATrip"
                 className="group inline-flex items-center gap-3 rounded-full bg-[#033D4A] py-2 pl-6 pr-2 text-[15px] font-medium text-white transition-transform duration-300 hover:-translate-y-0.5"
               >
                 Plan Your Journey

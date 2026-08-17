@@ -46,7 +46,7 @@ export default function Destinations() {
                 {current.tag}
               </p>
               <Link
-                href={`/destinations/${current.name.toLowerCase()}`}
+                href={`/destinations`}
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-[15px] font-medium text-[#033D4A] transition-transform duration-300 hover:-translate-y-0.5"
               >
                 Explore {current.name}
