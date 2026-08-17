@@ -113,13 +113,13 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2" onClick={close}>
             <span className="grid h-8 w-8 place-items-center rounded-full bg-white text-[#033D4A]">
               <Image
-                src="/logo.jpg"
+                src="/logo.webp"
                 alt="The Shorewood Logo"
                 width={40}
                 height={40}
                 loading="eager"
                 unoptimized
-                className="object-cover rounded-3xl"
+                className=" rounded-3xl"
               />
             </span>
             <span className="text-[30px] font-light  text-white">

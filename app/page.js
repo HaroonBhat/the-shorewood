@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experiences from "./components/Experiences";
@@ -35,7 +35,6 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main>
         <Hero />
         <About />

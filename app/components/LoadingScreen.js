@@ -207,7 +207,7 @@ export default function LoadingScreen() {
             style={{ animation: `lsLogoIn 1200ms ${EASE} both` }}
           >
             <Image
-              src="/logo.jpg"
+              src="/logo.webp"
               alt="The Shorewood"
               fill
               priority

@@ -185,8 +185,7 @@ export default function Hero() {
       </div>
 
       {/* ── trust indicators ─────────────────────────── */}
-      <div className="absolute bottom-0 left-1/2 z-[3] flex w-full -translate-x-1/2 animate-word-in flex-wrap items-center justify-center gap-x-6 gap-y-3 pb-6 sm:gap-x-10"
-        style={{ animationDelay: "1.75s" }}
+      <div className="absolute bottom-0 left-1/2 z-[3] flex w-full -translate-x-1/2  flex-wrap items-center justify-center gap-x-6 gap-y-3 pb-6 sm:gap-x-10"
       >
         {TRUST.map((t) => (
           <div key={t.label} className="flex items-center gap-2 text-white/85">
