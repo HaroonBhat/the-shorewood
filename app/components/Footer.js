@@ -19,7 +19,7 @@ const COLUMNS = [
   links: [
     { label: "Destinations", href: "/destinations" },
     { label: "Experiences", href: "/experiences" },
-    { label: "Blogs", href: "/blogs" },
+    // { label: "Blogs", href: "/blogs" },
     // { label: "Plan Your Trip", href: "/book-a-trip" },
   ],
   },
